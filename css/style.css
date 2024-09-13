@@ -1,0 +1,637 @@
+ 
+ /* 1-COMMON STYLES
+    2-GENERAL STYLES
+    3- SECTIONS
+       3.1 Header
+       3.2 Home section(section1)
+       3.3 About section(section 2)
+       3.4 featured section
+       3.5 offer section
+       3.6 about us section
+       3.7 section7
+       3.8 pricing section
+       3.9 section8
+       3.10 team section
+       3.11 news section
+       3.12 the footer section 
+  */
+  /* //////common styles ///////*/
+/*  ///////////////////////// overlay of background ////////////////////////// */
+.agency-overlay,.section6-overlay ,.section8-overlay{
+    position: absolute;
+    height: 100%;
+    width:100% ; }
+/* ///////////////////////// after of sections(2,4) /////////////////////////// */
+    .offer-son:after ,.website-after::after,.team-item:after,.news-item:after{
+        position: absolute;
+        content:"" ;
+        width: 0;
+        height: 0;
+        top:0;
+        left:0;
+        background-color:rgb(100,100,100);
+        opacity: 0;
+      }
+ .offer-son:hover::after,.website-after:hover::after ,.team-item:hover::after,.news-item:hover::after
+ {
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+        transition: 1.5s;
+ }    
+
+
+/* 1- General style */
+/*//////////////////////////// sections size screen ///////////////////////// */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    height: 8000px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.agency , .website-section ,.featured ,.offer ,.us , .pricing-section, .team,.news
+{
+    width:100% ;
+    height:100vh ;
+}
+.section11 ,.section6,.section8{
+    width:100% ;
+    height:50vh ;
+}
+/* //////////////////////// background image properties ////////////////////// */
+.agency ,.section6,.section8{
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+}
+/* //////////////////////////// sections container ///////////////////////////*/
+.website-container ,.offer-container ,.featured-container,.sec6-container,.pricing-container,.sec-container,.team-container,.news-container,.sec11-container
+{
+    width: 80%;
+    margin: auto;
+} 
+/* //////////////////// sections Titles ////////////////////// */
+.website ,.featured-title ,.offer-title,.pricing-title1,.news-title,.title-team{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 48px;
+}
+/* /////////////////////// sections lines ////////////////////////////// */
+.webdiv , .featdiv,.offerdiv,.pricingline,.line-team,.news-line
+{
+        width:70px ;
+        height: 3px;
+        margin: auto;
+}
+/* //////////////////////////// parent properties of section/////////////////// */
+.website-parent,.offer-parent,.featured-parent, .parent-us,.section6-parent,.pricing-parent,.sec8-parent,.team-parent,.news-parent
+{
+overflow: auto;
+}   
+/* //////////////////////// items properties ///////////////////////////////////*/
+.ti,.ni,.ss,.wi,.fi,.pi
+{
+   margin: 0px 5%;
+}
+ 
+/* ///////////////////////////////////  header  ////////////////////// */
+.header
+{
+width: 100%;
+height:80px;
+background-color: rgb(25, 24, 24);
+overflow: auto;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 10;
+opacity: 0.6;
+}
+
+.img-header{
+    width:150px;
+    height:80px;
+    border-radius: 30px;
+    margin-left: 100;
+    float: left;
+}
+.ul1{
+        list-style: none;   
+        float:right;
+        margin-right:160px ;
+    } 
+.ul1 li
+    {  
+    display: inline-block;
+    margin-right: 20px;
+    }
+.ul1 li a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: large;
+    } 
+    /* /////////////////////////////  SECTION1  ////////////////////////////////// */
+ .agency
+ {
+    background-image: url(../images/img_1_1712283081497.jpg);
+ } 
+.agency-overlay{
+    background-color: rgba(231, 227, 210, 0.3);
+}
+ .agency-parent{
+    width:40% ;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.agency-title
+{
+    font-size: 40;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10;
+}
+.agency-p
+{
+    font-size: 25px;
+    color: rgb(233, 230, 221);
+    padding-bottom: 8px;
+}
+.agency-btn1{
+    margin-right:10px;
+    background-color: azure;
+    color: black;
+    border-color: azure;
+}
+.agency-btn2{
+    background-color: blue;
+    color: white;
+    border-color: blue; 
+}
+.agency-btn1 ,.agency-btn2{
+    font-size: large;
+    padding:16px 25px;
+    margin-right:10px;
+    border-radius:9px ;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.agency-btn1:hover{
+    background-color:rgba(240, 255, 255, 0.822);
+}
+.agency-btn2:hover{
+  background-color: rgba(0, 0, 255, 0.816);
+}
+/* ////////////////////////////////////////  SECTION2  /////////////////////////////////// */
+.website-section
+ {
+    background-color: rgb(255, 255, 255); 
+ } 
+.website{
+    margin-bottom: 10px;
+}
+.webdiv{
+    background-color: rgb(104, 197, 227);
+}
+.website-item
+{
+float: left;
+height: 280px;
+width: 30%;
+background-color: rgb(254, 255, 255);
+border: 2px solid rgb(25, 25, 25);
+text-align: center;
+position: relative;
+}
+.website-after  a {
+    font-size: 35px;
+    color: blue;
+}
+.website_link{
+    text-transform: capitalize;
+    text-decoration:none ;
+    color: rgb(10, 185, 185);
+    font-size: 29;
+}
+.website-title{
+    text-transform: capitalize;
+    font-size:37px ;
+    padding-bottom:10px ;
+}
+.website-p{
+    padding-bottom:10px ;
+    font-size:30;
+}
+   .website-item:hover .website-title {
+    color:blue;
+    transition-delay:1s ;
+}
+.website-item:hover .website-p{
+    color:blue;
+    transition-delay:1s ;
+}
+/* /////////////////////////////// SECTION 3 (featured) ///////////////////////// */
+.featured
+ {
+    background-color: rgb(220, 241, 248);
+    position: relative;
+ } 
+.featured-title{
+    margin-bottom: 10px;
+    color: rgb(87, 5, 5);
+}
+.featdiv
+{
+    background-color:rgb(87, 5, 5) ;
+}
+.featured-parent
+{
+   position: relative;
+}  
+.featured-item
+{
+    float: left;
+    width: 30%;
+    text-align: center;
+    background-color:rgb(246, 251, 246);
+    padding: 25px 25px;
+    margin-bottom: 40px;
+    position: relative;
+}
+.featured-img
+{
+    background-color: rgb(255, 255, 255);
+}
+.overtitle{
+    text-transform: uppercase;
+    color:  mediumturquoise;
+}
+.p-overlay{
+        color:rgb(255, 255, 255) ;
+        font-size: larger;
+}
+.overicon{
+        font-size: 40px;
+        color: mediumturquoise;
+        background-color: rgb(58, 58, 161);
+        background-size: 30px;
+        text-align: center;
+} 
+.overlay-featured{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
+.featured-item:hover .overlay-featured{
+    visibility:visible
+}
+/* /////////////////////////////////////////////SECTION 4 offer/////////////////////////////////// */
+.offer{
+    position: relative;
+}
+.offer-title
+{
+    margin-bottom: 10px;
+    color: black
+}
+.offerdiv
+{
+    background-color: blue;
+}
+.offer-son{
+    width: 30%;
+    height: 250px;
+    float: left;
+    border: 1px solid black;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+.offer-p{
+    text-transform: capitalize;
+    font-size:large;
+    color :grey;
+}
+.offer-t{
+    text-transform: uppercase;
+    font-size: 30;
+}
+ .offer-icon
+   {
+    font-size:35px ;   
+   }
+.offer-son:hover .offer-t {
+    color:navy;
+    transition-delay:1s ;
+}
+.offer-son:hover .offer-p {
+    color:blue;
+    transition-delay:1s ;
+}
+    /* ///////////////////////////////////////////// SECTION 5 (us) ////////////////////////////////////////////  */
+.us
+ {
+    background-color:lightcyan;
+
+ }
+ .us-title{
+    text-transform: capitalize;
+    margin-bottom: 10px;
+ }
+ .line-us{
+    width:70px ;
+    height: 3px;
+    background-color: rgb(104, 197, 227);
+    
+ }
+ .div1-us{
+    float: left;
+    margin-left: 100px;
+ }
+ .div2-us{
+    margin-left: 300px;
+    width: 400px;
+    float: left;
+    text-align: center;
+ }
+/* ///////////////////////////section 6 ////////////////////////////// */
+.section6
+ {
+    background-image: url(../images/FB_IMG_1723890330991.jpg);
+ } 
+.section6-overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.section6-parent{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+.sec6-child{
+    float: left;
+    width: 20.5%;
+    text-align: center;
+}
+.sc{
+    margin: 0px 6%;
+}
+.sc1{
+    margin-right:6%;
+}
+.sectitle{
+    font-size: 40px;
+    color :azure
+}
+.sec-p{
+    font-size: 25px;
+    color :azure
+}
+.sec-icon{
+    font-size: 38px;
+}
+/* ///////////////////////// SECTION 7  PRICING ///////////////////*/
+.pricing-section
+ {
+    background-color:honeydew;
+    position: relative;
+ } 
+.pricing-title1{
+    margin-bottom: 10px;
+    color: rgb(17, 15, 15);
+    text-align: center;
+}
+.pricingline
+{
+    background-color:green;
+}
+.pricing-item{
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: 1px solid green;
+    height: 400px;
+    position: relative;
+}
+.pricing-title{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.divpricing{
+
+    width: 100px;
+    height: 100px;
+    border-radius:50%;
+    border: 1px solid black;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin: auto;
+}
+.pricing-p{
+    font-size: larger;
+    color:rgb(50, 48, 48) ;
+    margin-bottom: 10px;
+}
+.btn-pricing{
+font-size: larger;
+   padding: 12px 15px;
+   border: 1.5px solid black;
+}
+.pricing-item:after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top:0;
+    right: 0;
+    background-color:grey;
+    opacity: 1;
+}
+.pricing-item:hover::after{
+    width: 100%;
+    height:100%;
+    opacity: 0.6;
+    transition: 1s;
+}
+.pricing-item:hover h2
+{
+    color: blue;
+    transition-delay:0.4s ;
+}
+.pricing-item:hover .divpricing{
+    color:blue;
+    transition-delay:0.4s;
+}
+/* ///////////////////////////////// section 8 ////////////////////////////////// */
+.section8
+ {
+    background-image: url(../images/FB_IMG_1725264782647.jpg);
+ } 
+.section8-overlay{ 
+    background-color: rgba(230, 230, 220, 0.3);
+}
+.sec8-parent{
+    margin-bottom: 100;
+}
+.son-sec8
+{
+    width:40%;
+    float: left;
+    margin-left: 60px;
+}
+.child{
+    overflow: auto;
+}
+.img-sec8
+{
+    width: 100;
+    height: 100;
+    background-image: url(../images/FB_IMG_1724569497866.jpg);
+    background-size: cover;
+    border-radius:50px;
+    float: left;
+}
+.sec8-info{
+float: left;
+padding: 20px;
+}
+.sec8-info-title{
+    font-size: 30px;
+}
+.sec8-info-p{
+    color:blue;
+    font-size: 18px;
+}
+.sec8-p{
+    text-transform: capitalize;
+    font-size: 17;  
+}
+ /* /////////////////////////////////////  SECTION (OUR TEAM) /////////////////////////////// */
+.line-team{
+    background-color: black;
+}
+.team-item
+{
+float: left;
+width:30%;
+background-color: rgb(236, 242, 240);
+padding: 14px 18px;
+text-align: center;
+position: relative;
+}
+.team-info-title
+{
+  padding: 10px 0px;
+  text-transform: capitalize;
+}
+.team-info-p
+{
+text-transform: uppercase;
+color: grey;
+}
+.team-img {
+    width: 85%;
+    margin: auto;
+    position: relative;
+}
+.team-img img
+{
+    width: 100%;
+}
+.team-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+}
+.team-item:hover .team-overlay {
+    visibility:visible
+}
+.team-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color:white ;
+    margin-left: auto;
+}
+.team-overlay a i{
+line-height:40px
+}
+   .team-item:hover .team-info-title{
+    color: rgb(224, 26, 26);
+    transition-delay:1s ;
+ }
+ .team-item:hover .team-info-p{
+     color: blue;
+     transition-delay:1s ;
+ } 
+/* //////////////////////////////////////////// section 10 news /////////////////////////////////////////// */
+
+.news-line{
+    background-color: black;
+}
+.news-item {
+    width: 30%;
+    float: left;
+    background-color: rgb(235, 248, 248);
+    padding: 0px 32px;
+    position: relative;
+}
+.span-news{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.link-news{
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: midnightblue;
+}
+.h-inf{
+    font-size: 27px;
+}
+/* //////////////////////////////////////////// section11 //////////////////////////////////////// */
+.section11{
+    background-color: rgb(252, 253, 252);
+}
+.sec11-container
+{
+text-align: center;
+}
+.lin11{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:rgb(55, 131, 237);
+    border-radius: 25px;
+    margin-left: 15px;
+    padding: 11px 0px;
+}
+.link11{
+   
+    font-size: 25px; 
+    text-align: center;
+    color: white;
+}
+.link11:hover{
+    color:navy;
+}
+.sec11-info{
+    color: hsla(0, 1%, 35%, 0.915);
+    text-transform: uppercase;
+}
+
